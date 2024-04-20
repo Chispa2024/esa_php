@@ -6,7 +6,7 @@
  * TEST GITHUB DESKTOP
  * c'est pas vrai c'est gg qui mange tout !
  * Gabriella mange des croissants de bon matin.
- * GG, voici la modification pour verifier le conflits
+ * j'embête Gabriella
  */
 
 // lit le mot en ligne de commande
