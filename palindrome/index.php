@@ -4,6 +4,7 @@
  * @author Gabriela <gabriela.pena.perez@gmail.com>
  * @copyright 2024 GaP
  * TEST GITHUB DESKTOP
+ * c'est pas vrai c'est gg qui mange tout !
  */
 
 // lit le mot en ligne de commande
