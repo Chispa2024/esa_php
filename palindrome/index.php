@@ -4,9 +4,9 @@
  * @author Gabriela <gabriela.pena.perez@gmail.com>
  * @copyright 2024 GaP
  * TEST GITHUB DESKTOP
-c'est pas vrai c'est gg qui mange tout !
- Gabriella mange des croissants de bon matin.
-
+ * c'est pas vrai c'est gg qui mange tout !
+ * Gabriella mange des croissants de bon matin.
+ */
 
 // lit le mot en ligne de commande
 $mot = readline("Entrer un mot: ");
