@@ -23,8 +23,17 @@
     <legend><b>Ton texte en couleur</b></legend>
     <label ="texte">Saisissez votre texte (10 mots minimum): </label>
     <input type="text" id="texte" name="texte">
-    <button type="submit" name="colorer" value="Belgique" style="background: url(./1.svg); width: 50px; height: 50px;"></button>
-    <button type="submit" name="colorer" value="Mexique" style="background: url(./2.svg); width: 50px; height: 50px;"></button>
+
+    <input type="checkbox" id="belgique" name="colorer" value="Belgique">
+    <label for="belgique" style="background: url(./1.svg); width: 50px; height: 50px;"></label>
+
+    <input type="checkbox" id="mexique" name="colorer" value="Mexique">
+    <label for="mexique" style="background: url(./2.svg); width: 50px; height: 50px;"></label>
+
+    <input type="checkbox" id="france" name="colorer" value="France">
+    <label for="france" style="background: url(./3.svg); width: 50px; height: 50px;"></label>
+
+    <button type="submit">Soumettre</button>
 </form>
 
 <?php

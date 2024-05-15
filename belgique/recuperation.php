@@ -24,9 +24,10 @@
 
 <body>
 
-<header>Voici votre texte avec les couleurs du drapeau chosi : </br></header>
+<header>Voici votre texte avec les couleurs du drapeau choisi : </br></header>
 <article>
-<?php
+
+    <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $texte = $_POST['texte'];
     if (str_word_count($texte) < 10) {
@@ -36,9 +37,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 // Tableau des couleurs dans l'ordre spécifique
-$couleurs = ["black", "yellow", "red"];
-if (isset($_POST['colorer']) && $_POST['colorer'] == 'Mexique') {
-    $couleurs = ["green", "white", "red"];
+$couleurs = ["black", "yellow", "red"]; // Couleurs par défaut pour la Belgique
+
+if (isset($_POST['colorer'])) {
+    switch ($_POST['colorer']) {
+        case 'Mexique':
+            $couleurs = ["green", "white", "red"];
+            break;
+        case 'France':
+            $couleurs = ["blue", "white", "red"];
+            break;
+        default:
+            break;
+    }
 }
 
 // Conversion du texte en tableau de caractères
