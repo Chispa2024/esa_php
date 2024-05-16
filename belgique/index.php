@@ -24,14 +24,22 @@
     <label ="texte">Saisissez votre texte (10 mots minimum): </label>
     <input type="text" id="texte" name="texte">
 
-    <input type="checkbox" id="belgique" name="colorer" value="Belgique">
-    <label for="belgique" style="background: url(./1.svg); width: 50px; height: 50px;"></label>
+        <label>Choississez le drapeau </label>
+        <input type="checkbox" id="belgique" name="colorer" value="Belgique">
+        <label for="belgique" style="background: url(./1.svg); width: 50px; height: 50px;"></label>
 
-    <input type="checkbox" id="mexique" name="colorer" value="Mexique">
-    <label for="mexique" style="background: url(./2.svg); width: 50px; height: 50px;"></label>
+        <input type="checkbox" id="mexique" name="colorer" value="Mexique">
+        <label for="mexique" style="background: url(./2.svg); width: 50px; height: 50px;"></label>
 
-    <input type="checkbox" id="france" name="colorer" value="France">
-    <label for="france" style="background: url(./3.svg); width: 50px; height: 50px;"></label>
+        <input type="checkbox" id="france" name="colorer" value="France">
+        <label for="france" style="background: url(./3.svg); width: 50px; height: 50px;"></label>
+
+        <input type="checkbox" id="europe" name="colorer" value="Europe">
+        <label for="Europe" style="background: url(./5.svg); width: 50px; height: 50px;"></label>
+
+
+        <input type="checkbox" id="lgtb" name="colorer" value="lgtb" >
+        <label for="Lgtb" style="background: url(./4.svg); width: 50px; height: 50px;"></label>
 
     <button type="submit">Soumettre</button>
 </form>

@@ -27,7 +27,7 @@
 <header>Voici votre texte avec les couleurs du drapeau choisi : </br></header>
 <article>
 
-    <?php
+<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $texte = $_POST['texte'];
     if (str_word_count($texte) < 10) {
@@ -47,6 +47,12 @@ if (isset($_POST['colorer'])) {
         case 'France':
             $couleurs = ["blue", "white", "red"];
             break;
+        case 'Europe':
+            $couleurs = ["navy", "LightBlue", "yellow"];
+            break;
+        case 'lgtb':
+            $couleurs = ["red", "orange", "yellow", "green", "blue", "purple"]; // Ajout de l'option SixCouleurs
+            break;
         default:
             break;
     }
@@ -61,7 +67,7 @@ echo "<div style=\"border: 2px solid black; padding: 10px; background-color: gai
 $i = 0; // Compteur pour parcourir le tableau de couleurs
 foreach ($lettres as $lettre) {
     if ($lettre != ' ') {
-        echo "<span style=\"color: " . $couleurs[$i % 3] . "\">$lettre</span>";
+        echo "<span style=\"color: " . $couleurs[$i % count($couleurs)] . "\">$lettre</span>";
         $i++; // Incrémentation du compteur seulement si le caractère n'est pas un espace
     } else {
         echo $lettre; // Affichage de l'espace sans changer la couleur
