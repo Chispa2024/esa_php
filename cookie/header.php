@@ -11,6 +11,6 @@
     <main class="container">
         <article>
         <header id="mainHeader">
-            <img src="images/layout/maTronche.svg" alt="GaP ;-)" id="logoImg" />
+            <img src="images/layout/ecran.svg" alt="GaP ;-)" id="logoImg" />
             <h1>Je choisi mon couleur de ton fond d'écran ;-) </h1>
         </header><!--Ici se termine le #mainHeader-->
