@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Cantarell|Raleway&display=swap');
+
+
+
+.noir {
+    background-color: black;
+}
+
+.rouge {
+    background-color: red;
+}
+
+.rose {
+    background-color: pink;
+}
+
+.vert {
+    background-color: green;
+}
+
+.jaune {
+    background-color: yellow;
+}
+
+.blanc {
+    background-color: white;
+}
+
+.bleu {
+    background-color: blue;
+}
+.mauve {
+    background-color: purple;
+}
