@@ -9,8 +9,8 @@
     </head>
     <body class="<?php echo $_COOKIE['couleurPreferee'] ?>" >
     <main class="container">
-        <article>
-        <header id="mainHeader">
-            <img src="images/layout/ecran.svg" alt="GaP ;-)" id="logoImg" />
-            <h1>Je choisi mon couleur de ton fond d'écran ;-) </h1>
+        <article class="transparent">
+        <header class="transparent" id="mainHeader">
+            <img src="images/layout/ecran.svg" alt="ecran" id="logoImg" />
+            <h1>Je choisi mon fond d'écran ;-) </h1>
         </header><!--Ici se termine le #mainHeader-->

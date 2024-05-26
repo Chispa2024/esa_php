@@ -16,7 +16,7 @@ if (isset($_COOKIE['couleurPreferee'])) {
 
 require_once 'header.php';
 
-$colores = ['noir', 'rouge', 'rose', 'vert', 'jaune', 'blanc', 'bleu', 'mauve'];
+$colores = ['noir', 'rouge', 'rose', 'vert', 'jaune', 'blanc', 'bleu', 'mauve', 'plage', 'pattern', 'reflet', 'Le_banc', 'palmier'];
 
 $nombre = mt_rand(1, 100);
 setcookie('compteur', $_COOKIE['compteur']+1);
@@ -28,8 +28,8 @@ echo $_COOKIE['compteur'];
 
 <form action="index.php" method="post">
 
-        <legend><b>Sélectionnez vos préférences : </b></legend>
-        <select name="color">
+        <legend><b>Sélectionnez un fond d'écran de la liste: </b></legend>
+        <select name="color" >
             <option value="<?php echo $_COOKIE['couleurPreferee'] ?>"><?php echo $_COOKIE['couleurPreferee'] ?></option>
             <?php foreach ($colores as $color): ?>
             <option value= "<?php echo $color ?>" > <?php echo $color ?> </option>

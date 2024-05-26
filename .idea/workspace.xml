@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea6d382c-73ea-41f6-9b1b-3f8dcb96ff77" name="Changes" comment="Devoir de cookies !">
-      <change beforePath="$PROJECT_DIR$/cookie/images/layout/maTronche.svg" beforeDir="false" />
+    <list default="true" id="ea6d382c-73ea-41f6-9b1b-3f8dcb96ff77" name="Changes" comment="maTronche.svg remplacée par ecran.svg">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,18 +18,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Chispa2024"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Chispa2024&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Chispa2024/esa_php.git",
-    "accountId": "a21dfc91-7b20-4a40-b9be-6417fe604560"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Chispa2024/esa_php.git&quot;,
+    &quot;accountId&quot;: &quot;a21dfc91-7b20-4a40-b9be-6417fe604560&quot;
   }
-}]]></component>
+}</component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\php\php.exe" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -41,11 +44,13 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/exophp/26052024",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -66,7 +71,8 @@
       <option name="presentableId" value="Default" />
       <updated>1715581837680</updated>
       <workItem from="1715581838977" duration="46000" />
-      <workItem from="1716630029747" duration="385000" />
+      <workItem from="1716630029747" duration="1958000" />
+      <workItem from="1716632190133" duration="312000" />
     </task>
     <task id="LOCAL-00001" summary="Devoir de cookies !">
       <option name="closed" value="true" />
@@ -76,7 +82,31 @@
       <option name="project" value="LOCAL" />
       <updated>1716630254382</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="maTronche.svg remplacée par ecran.svg">
+      <option name="closed" value="true" />
+      <created>1716630554973</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716630554973</updated>
+    </task>
+    <task id="LOCAL-00003" summary="maTronche.svg remplacée par ecran.svg">
+      <option name="closed" value="true" />
+      <created>1716630597333</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716630597333</updated>
+    </task>
+    <task id="LOCAL-00004" summary="maTronche.svg remplacée par ecran.svg">
+      <option name="closed" value="true" />
+      <created>1716630690733</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716630690733</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,6 +115,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ajout des drapeaux&#10;&#10;Ajout du drapeau LGTB et Europe" />
     <MESSAGE value="Devoir de cookies !" />
-    <option name="LAST_COMMIT_MESSAGE" value="Devoir de cookies !" />
+    <MESSAGE value="maTronche.svg remplacée par ecran.svg" />
+    <option name="LAST_COMMIT_MESSAGE" value="maTronche.svg remplacée par ecran.svg" />
   </component>
 </project>
