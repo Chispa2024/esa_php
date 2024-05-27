@@ -19,8 +19,19 @@ require_once 'header.php';
 $colores = ['noir', 'rouge', 'rose', 'vert', 'jaune', 'blanc', 'bleu', 'mauve', 'plage', 'pattern', 'reflet', 'Le_banc', 'palmier'];
 
 $nombre = mt_rand(1, 100);
-setcookie('compteur', $_COOKIE['compteur']+1);
+
+if (isset($_COOKIE['compteur'])) {
+    // Augmenter le compteur de 1
+    $_COOKIE['compteur'] += 1;
+} else {
+    // Définir une valeur par défaut pour $_COOKIE['compteur'] si elle n'est pas définie
+    $_COOKIE['compteur'] = 1;
+}
+
+
+setcookie('compteur', $_COOKIE['compteur']);
 echo $_COOKIE['compteur'];
+
 ?>
 
 <p> NOMBRE ALEATOIRE : <?php echo $nombre ?> </p>
