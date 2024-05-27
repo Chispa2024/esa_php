@@ -1,21 +1,22 @@
 <?php
 
-if (isset($_COOKIE['couleurPreferee'])) {
+if (isset ($_POST['color'])) {
+    // Si une nouvelle couleur a été postée, mettez à jour le cookie
+    $_COOKIE['couleurPreferee'] = $_POST['color'];
+    setcookie('couleurPreferee', $_POST['color'], mktime(0, 0, 0, 12, 31, 2037));
 
-    if (isset ($_POST['color'])) {
-        $_COOKIE['couleurPreferee'] = $_POST['color'];
-    }
-
-} else {
+} elseif (!isset($_COOKIE['couleurPreferee'])) {
+    // Si aucune nouvelle couleur n'a été postée et qu'aucun cookie 'couleurPreferee' n'est défini, définissez une valeur par défaut
     setcookie('couleurPreferee', 'mauve', mktime(0, 0, 0, 12, 31, 2037));
-
-    if (isset ($_POST['color'])) {
-        $_COOKIE['couleurPreferee'] = $_POST['color'];
-    }
+    $_COOKIE['couleurPreferee'] = 'mauve';
 }
 
 require_once 'header.php';
 
+//Header HTML
+require_once 'header.php';
+
+//Liste deroulente
 $colores = ['noir', 'rouge', 'rose', 'vert', 'jaune', 'blanc', 'bleu', 'mauve', 'plage', 'pattern', 'reflet', 'Le_banc', 'palmier'];
 
 $nombre = mt_rand(1, 100);
@@ -51,5 +52,6 @@ echo $_COOKIE['compteur'];
 </form>
 
 <?php
+//Footer HTML
 require_once 'footer.php';
 ?>
