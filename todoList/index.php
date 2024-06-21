@@ -75,12 +75,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <!-- Champ de saisie pour le titre de la tâche -->
         <input type="text" name="title" placeholder="Titre de la tâche">
         <!-- Date limite de la tâche -->
-        <input type="date" name="due_date">
+        <input type="date" name="due_date" value="<?php echo date('Y-m-d'); ?>">
         <!-- Bouton pour soumettre le formulaire et ajouter la tâche -->
         <input type="submit" value="+ Ajoutez une tâche">
     </form>
 
-    <!-- Empeche l'utilisateur d'ajouter une tâche sans titre (script definit dans add.php) -->
+    <!-- Empeche l'utilisateur d'ajouter une tâche sans titre et sans date (script definit dans add.php) -->
     <?php if (isset($_REQUEST['erreur'])) : ?>
         <script>
             alert("<?php echo $_REQUEST['erreur']; ?>");
@@ -141,7 +141,6 @@ Enfin, il inclut le fichier footer.php à la fin de la page.
 
 
 <!-- Début de l'en-tête -->
-<!-- Début de l'en-tête -->
 <div class="header">
     <!-- Titre de la section -->
     <h2>Tâches</h2>
@@ -166,19 +165,24 @@ Enfin, il inclut le fichier footer.php à la fin de la page.
     // Boucle sur chaque tâche non terminée
     foreach ($incompleteTasks as $id => $todo) :
         // On ignore la première ligne du document CSV qui contien les titres
-        if ($counter > 0) : ?>
+        if ($counter > 0) :
+            // Création d'un objet DateTime à partir de la date limite de la tâche
+            $date = DateTime::createFromFormat('Y-m-d', $todo['due_date']);
+            // Création d'un objet DateTime pour la date actuelle
+            $now = new DateTime();
+            // Détermination de la classe CSS à utiliser
+            $class = $date < $now ? 'date-expiree' : '';
+    ?>
             <!-- Ligne du tableau pour une tâche -->
             <tr>
                 <!-- Titre de la tâche -->
                 <td><?php echo $todo['title']; ?></td>
                 <!-- Date limite de la tâche -->
-                <td>
-                    <?php $date = DateTime::createFromFormat('Y-m-d', $todo['due_date']);
-                    echo $date->format('d/m/Y'); ?>
+                <td class="<?php echo $class; ?>">
+                    <?php echo $date->format('d/m/Y'); ?>
                 </td>
                 <!-- Case à cocher pour marquer la tâche comme terminée -->
                 <td>
-
                     <!-- Formulaire pour changer l'état de la tâche -->
                     <form action="toggle.php" method="post">
                         <!-- ID de la tâche caché -->

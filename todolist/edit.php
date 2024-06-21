@@ -44,7 +44,7 @@ if (isset($_GET['id'])) {
         <!-- Champ de texte prérempli avec le titre actuel de la tâche -->
         <input type="text" name="title" value="<?php echo $todo['title']; ?>" required>
         <!-- Date limite de la tâche -->
-        <input type="date" name="due_date" value="<?php echo $todo['due_date']; ?>">
+        <input type="date" name="due_date" value="<?php echo $todo['due_date']; ?>" required>
         <!-- Bouton pour soumettre le formulaire -->
         <input type="submit" value="Valider">
     </form>

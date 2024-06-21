@@ -22,6 +22,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Termine l'exécution du script
         exit;
     }
+    // Stocke la date limite de la tâche postée dans la variable $due_date
+    $due_date = $_POST['due_date'];
+    // Vérifie si la date limite est vide
+    if (empty($due_date)) {
+        // Si c'est le cas, redirige vers 'index.php' avec un message d'erreur
+        header("Location: index.php?erreur= Vous devez saisir une date limite !");
+        // Termine l'exécution du script
+        exit;
+    }
+
 
     // Vérifie si un titre a été posté
     if (isset($_POST['title'])) {
